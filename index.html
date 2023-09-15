@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="weather-box">
+        <h1>Current Weather</h1>
+        <!-- <label for="city-input"> <span id="city-label">City</span> </label> -->
+        <input type="text" id="city-input" autocomplete="off">
+        <button type="button" id="weather-button">Show Weather</button>
+        <div id="weather-content">
+            <section class="sub-box" id="box-1">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="weather-icon">
+                <p id="weather-description">No City, no weather :(</p>
+            </section>
+            <section class="sub-box" id="box-2">
+                <p>Temperature:</p>
+                <p>Termic Sensation:</p>
+                <p>Humidity:</p>
+                <p>Air Pressure:</p>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
