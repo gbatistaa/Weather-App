@@ -1,1 +1,1 @@
-import { btn, icon, city, description, infos, infosData} from "module";
+import { btn, icon, city, description, infos, infosData } from "./front-end.mjs";
