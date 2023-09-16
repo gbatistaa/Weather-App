@@ -8,20 +8,29 @@
 </head>
 <body>
     <div id="weather-box">
-        <h1>Current Weather</h1>
+        <h1>Current Weather ☀️</h1>
         <!-- <label for="city-input"> <span id="city-label">City</span> </label> -->
         <input type="text" id="city-input" autocomplete="off">
         <button type="submit" id="weather-button">Show Weather</button>
         <div id="weather-content">
             <section class="sub-box" id="box-1">
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="weather-icon">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
                 <p id="weather-description">No City, no weather :(</p>
             </section>
             <section class="sub-box" id="box-2">
-                <p class="infos" id="info-1">Temperature: <span class="info-data"></span></p>
-                <p class="infos" id="info-2">Sensation: <span class="info-data"></span></p>
-                <p class="infos" id="info-3">Humidity: <span class="info-data"></span></p>
-                <p class="infos" id="info-4">Air Pressure:<span class="info-data"></span></p>
+                <section class="data-sec" id="data-sec1">
+                    <p class="infos" id="info-1">Temperature:</p>
+                    <p class="infos" id="info-2">Sensation:</p>
+                    <p class="infos" id="info-3">Humidity:</p>
+                    <p class="infos" id="info-4">Air Pressure:</p>
+                </section>
+                <section class="data-sec" id="data-sec2">
+                    <p class="info-data"></p>
+                    <p class="info-data"></p>
+                    <p class="info-data"></p>
+                    <p class="info-data"></p>
+                </section>
+                
             </section>
         </div>
     </div>

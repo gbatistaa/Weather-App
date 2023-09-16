@@ -17,8 +17,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(106,252,246);
-    background: linear-gradient(29deg, rgba(106,252,246,1) 0%, rgba(187,251,255,1) 50%, rgba(20,148,232,1) 100%);
+    background: #6afcf6;
+    background: linear-gradient(29deg, #6afcf6 0%, #bbfbff 50%, #1494e8 100%);
 }
 
 h1, #weather-box, #city-input{
@@ -28,20 +28,23 @@ div input#city-input{
     height: 2.5rem;   
     width: 12rem;
     outline-style: hidden;
-    outline-width: 2px;
+    outline-width: 3.5px;
     border-radius: 0.4em;
     border: none;
     padding: 0.5rem;
-    color: rgb(59, 59, 59);
+    color: #3b3b3b;
 }
 
 #weather-button{
     border-radius: 0.4em;
     margin-bottom: 4.5rem;
-    height: 2em;
-    width: 7em;
+    height: 2.5rem;   
+    width: 10rem;
     border: none;
     cursor: pointer;
+    background-color: #f77300;
+    color: #ffffff;
+   font-family: 'Weather';
  }
 #weather-box{
     padding: 3rem 0.2rem;
@@ -74,7 +77,7 @@ div input#city-input{
     line-height: 2.5em;
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
  }
 
@@ -85,4 +88,18 @@ div input#city-input{
  .infos{
     display: flex;
     flex-direction: row;
+ }
+
+ 
+ .data-sec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ #data-sec1{width: 65%;}
+ #data-sec2{width: 35%;}
+ .info-data{
+   color: #565656;
+   font-size: 1rem;
  }
