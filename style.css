@@ -3,10 +3,15 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Weather';
+    src: url(./weather-font.ttf);
 }
 
 body{
+    font-family: 'Weather';
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -39,7 +44,7 @@ div input#city-input{
     cursor: pointer;
  }
 #weather-box{
-    padding: 3rem;
+    padding: 3rem 0.2rem;
     background-color: #2fafcf;
     height: 37rem;
     width: 35rem;
@@ -65,7 +70,7 @@ div input#city-input{
     height: 100%;
  }
  #box-2{
-    padding: 2rem;
+    padding: 2rem 0.5rem;
     line-height: 2.5em;
     font-size: 1.2rem;
     display: flex;
@@ -75,4 +80,9 @@ div input#city-input{
 
  #weather-icon{
     min-width: 12rem;
+ }
+
+ .infos{
+    display: flex;
+    flex-direction: row;
  }
