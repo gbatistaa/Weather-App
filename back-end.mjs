@@ -24,7 +24,7 @@ function weatherRequest (e) {
             };
         };
         
-        geo.open("GET", `http://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&appid=a5c989eb2a92a83339899d6a9fc8c0f5`);
+        geo.open("GET", `https://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&appid=a5c989eb2a92a83339899d6a9fc8c0f5`);
         geo.send();
         
         weather.onload = () => {
